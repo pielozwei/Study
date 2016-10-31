@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create
+END
+activiti.mysql.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mysql.create.history.sql
+END
+activiti.oracle.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.oracle.create.history.sql
+END
+activiti.postgres.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.postgres.create.history.sql
+END
+activiti.db2.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.db2.create.history.sql
+END
+activiti.h2.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.h2.create.history.sql
+END
+activiti.mysql.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mysql.create.engine.sql
+END
+activiti.oracle.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.oracle.create.engine.sql
+END
+activiti.postgres.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.postgres.create.engine.sql
+END
+activiti.db2.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.db2.create.engine.sql
+END
+activiti.h2.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.h2.create.engine.sql
+END
+activiti.mssql.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mssql.create.identity.sql
+END
+activiti.mysql.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mysql.create.identity.sql
+END
+activiti.oracle.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.oracle.create.identity.sql
+END
+activiti.postgres.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.postgres.create.identity.sql
+END
+activiti.db2.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.db2.create.identity.sql
+END
+activiti.mssql.create.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mssql.create.history.sql
+END
+activiti.h2.create.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.h2.create.identity.sql
+END
+activiti.mssql.create.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/create/activiti.mssql.create.engine.sql
+END

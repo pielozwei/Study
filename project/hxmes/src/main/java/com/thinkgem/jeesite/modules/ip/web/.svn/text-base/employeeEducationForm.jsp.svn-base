@@ -1,0 +1,141 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>学习经历管理</title>
+<meta name="decorator" content="default" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#zg_id").focus();
+		$("#inputForm").validate();
+	});
+</script>
+</head>
+<body>
+	<br />
+
+	<form:form id="inputForm" modelAttribute="employeeEducation"
+		action="${ctx}/ip/employeeEducation/save" method="post"
+		class="form-horizontal">
+		<form:hidden path="id" />
+		<tags:message content="${message}" />
+		<div class="control-group">
+			<label class="control-label" for="zg_id">职工姓名:</label>
+			<div class="controls">
+				<tags:treeselect id="zg_id" name="zg_id" value="${list.id}" labelName="name" labelValue="${list.name}" title="员工" url="/ip/employee/treeData"/>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label">学历性质:</label>
+			<div class="controls">
+				<form:select path="xlxzdm">
+					<form:options items="${fns:getDictList('d_xlxz')}"
+						itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+			</div>
+		</div>
+
+
+		<div class="control-group">
+			<label class="control-label" for="xldm">学历:</label>
+			<div class="controls">
+				<form:select path="xldm" class="input-xlarge">
+					<option value="0">本科</option>
+					<option value="1">专科</option>
+					<option value="2">研究生</option>
+				</form:select>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label">所学专业类别:</label>
+			<div class="controls">
+				<form:select path="sxzylb">
+					<form:options items="${fns:getDictList('d_zylb')}"
+						itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="rxsj">入学时间:</label>
+			<div class="controls">
+				<form:input path="rxsj" name="rxsj" type="text"
+					maxlength="20" class="Wdate required"
+					onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="xz">学制:</label>
+			<div class="controls">
+				<form:input path="xz" htmlEscape="false" maxlength="200"
+					class="required" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="byyyrq">毕(肄)业日期:</label>
+			<div class="controls">
+				<form:input path="byyyrq" name="byyyrq" type="text"
+					maxlength="20" class="Wdate required"
+					onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="xxdwmc">学校(单位)名称:</label>
+			<div class="controls">
+				<form:input path="xxdwmc" htmlEscape="false" maxlength="200"
+					class="required" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="zymc">专业:</label>
+			<div class="controls">
+				<form:select path="zymc" class="input-xlarge">
+					<option value="0">计算机</option>
+					<option value="1">信息工程</option>
+					<option value="2">文学</option>
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="xw">学位:</label>
+			<div class="controls">
+				<form:select path="xw" class="input-xlarge">
+					<option value="0">学士</option>
+					<option value="1">硕士</option>
+					<option value="2">博士</option>
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="xwsyrq">学位授予日期:</label>
+			<div class="controls">
+				<form:input path="xwsyrq" name="xwsyrq" type="text"
+					maxlength="20" class="Wdate required"
+					onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});" />
+			</div>
+		</div>
+
+
+		<div class="control-group">
+			<label class="control-label">审核状态:</label>
+			<div class="controls">
+				<form:select path="shzt">
+					<form:options items="${fns:getDictList('d_yesno')}"
+						itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+			</div>
+		</div>
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeeEducation:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit"
+					value="保 存" />&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回"
+				onclick="history.go(-1)" />
+		</div>
+	</form:form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>行政党派职务经历管理</title>
+<meta name="decorator" content="default" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#name").focus();
+		$("#inputForm").validate();
+	});
+	window.onload = function() {
+		var xl_name = document.getElementById("xl_id");
+		var xl_err = document.getElementById("xl_err");
+		xl_name.onblur = function() {
+			if (/^[0-9]*$/.test(xl_name.value) == false)
+				xl_err.innerHTML = "只能输入数字！";
+			else
+				xl_err.innerHTML = "";
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- 
+	<ul class="nav nav-tabs">
+		<li><a href="${ctx}/ip/employeePosition/">行政党派职务经历列表</a></li>
+		<li class="active"><a
+			href="${ctx}/ip/employeePosition/form?id=${employeePosition.id}">行政党派职务经历<shiro:hasPermission
+					name="ip:employeePosition:edit">${not empty employeePosition.id?'修改':'添加'}</shiro:hasPermission>
+				<shiro:lacksPermission name="ip:employeePosition:edit">查看</shiro:lacksPermission></a></li>
+	</ul> 
+	-->
+	<br />
+
+	<form:form id="inputForm" modelAttribute="employeePosition"
+		action="${ctx}/ip/employeePosition/save" method="post"
+		class="form-horizontal">
+		<form:hidden path="id" />
+		<tags:message content="${message}" />
+
+
+		<div class="control-group">
+			<label class="control-label" for="zg_id">姓名:</label>
+			<div class="controls">
+				<tags:treeselect id="zg_id" name="zg_id"
+					value="${list.id}" labelName="name" labelValue="${list.name}"
+					title="姓名：" url="/ip/employee/treeData" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="dqrzzt">当前任职状态:</label>
+			<div class="controls">
+				<form:select path="dqrzzt">
+					<form:options items="${fns:getDictList('d_rzzt')}"
+						itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="zw">职务:</label>
+			<div class="controls">
+				<form:input path="zw" htmlEscape="false" maxlength="200"
+					class="required" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="pzrq">决定或批准任职的日期:</label>
+			<div class="controls">
+				<form:input path="pzrq" htmlEscape="false" maxlength="200"
+					readonly="readonly"
+					onclick="WdatePicker({dateFmt:'yyyy-mm-dd',isShowClear:false});" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="rzwh">任职文号:</label>
+			<div class="controls">
+				<form:input path="rzwh" htmlEscape="false" maxlength="200" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="basj">备案时间:</label>
+			<div class="controls">
+				<form:input path="basj" htmlEscape="false" maxlength="200"
+					readonly="readonly"
+					onclick="WdatePicker({dateFmt:'yyyy-mm-dd',isShowClear:false});" />
+			</div>
+		</div>
+
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeePosition:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit"
+					value="保 存" />&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回"
+				onclick="history.go(-1)" />
+		</div>
+	</form:form>
+</body>
+</html>

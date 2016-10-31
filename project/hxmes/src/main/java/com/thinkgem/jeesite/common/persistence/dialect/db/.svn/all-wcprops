@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db
+END
+H2Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/H2Dialect.java
+END
+SQLServer2005Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/SQLServer2005Dialect.java
+END
+PostgreSQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/PostgreSQLDialect.java
+END
+DerbyDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/DerbyDialect.java
+END
+MySQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/MySQLDialect.java
+END
+OracleDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/OracleDialect.java
+END
+SQLServerDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/SQLServerDialect.java
+END
+SybaseDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/SybaseDialect.java
+END
+DB2Dialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/DB2Dialect.java
+END
+HSQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/dialect/db/HSQLDialect.java
+END

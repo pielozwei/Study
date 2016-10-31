@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/views/error
+END
+500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/views/error/500.jsp
+END
+403.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/views/error/403.jsp
+END
+404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/views/error/404.jsp
+END

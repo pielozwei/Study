@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/hxmes_hibernate/!svn/ver/259/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/Parameter.java
+END
+DataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/DataEntity.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/BaseEntity.java
+END
+IdEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/IdEntity.java
+END
+MesDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/259/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/MesDataEntity.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/Page.java
+END
+BaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/BaseDao.java
+END
+MesIdEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/259/hxmes/src/main/java/com/thinkgem/jeesite/common/persistence/MesIdEntity.java
+END

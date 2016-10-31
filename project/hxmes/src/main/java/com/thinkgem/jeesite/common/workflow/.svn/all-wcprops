@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow
+END
+DateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow/DateConverter.java
+END
+Variable.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow/Variable.java
+END
+PropertyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow/PropertyType.java
+END
+WorkflowEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow/WorkflowEntity.java
+END
+WorkflowUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/workflow/WorkflowUtils.java
+END

@@ -1,0 +1,68 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+	<title>组织考核经历管理</title>
+	<meta name="decorator" content="default"/>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#name").focus();
+			$("#inputForm").validate();
+		});
+	</script>
+</head>
+<body>
+	<br/>
+	<form:form id="inputForm" modelAttribute="employeeAppraisal" action="${ctx}/ip/employeeAppraisal/save" method="post" class="form-horizontal">
+		<form:hidden path="id"/>
+		<tags:message content="${message}"/>
+		<div class="control-group">
+			<label class="control-label" for="zg_id">职工id:</label>
+			<div class="controls">
+				<form:input path="zg_id" htmlEscape="false" maxlength="200" class="required"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="khnd">考核年度:</label>
+			<div class="controls">
+				<form:select path="khnd" class="input-xlarge required">
+				  <option value ="1995">1995</option>  
+				  <option value ="1996">1996</option>  
+				  <option value ="1997">1997</option>  
+				  <option value ="1998">1998</option>
+				</form:select>&nbsp;年
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="khjllb">考核结论类别:</label>
+			<div class="controls">
+				<form:select path="khjllb" class="input-xlarge required">
+				  <form:options items="${fns:getDictList('d_khjllb')}" itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="cjkhbddcyy">参加考核不定等次原因:</label>
+			<div class="controls">
+				<form:select path="cjkhbddcyy" class="input-xlarge">
+					<form:options items="${fns:getDictList('d_cjkhbddcyy')}" itemLabel="label" itemValue="value" htmlEscape="false" /> 
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="wcjkhyy">未参加考核原因:</label>
+			<div class="controls">
+				<form:select path="wcjkhyy" class="input-xlarge">
+					<form:options items="${fns:getDictList('d_wcjkhyy')}" itemLabel="label" itemValue="value" htmlEscape="false" /> 
+				</form:select>
+			</div>
+		</div>
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeeAppraisal:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存"/>&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回" onclick="history.go(-1)"/>
+		</div>
+	</form:form>
+</body>
+</html>

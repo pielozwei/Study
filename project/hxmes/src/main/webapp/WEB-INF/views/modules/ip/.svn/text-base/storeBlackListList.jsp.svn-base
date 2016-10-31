@@ -1,0 +1,101 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+	<title>仓库黑名单管理</title>
+	<meta name="decorator" content="default"/>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+		});
+		function page(n,s){
+			$("#pageNo").val(n);
+			$("#pageSize").val(s);
+			$("#searchForm").submit();
+        	return false;
+        }
+		function delList(){
+			//获取勾选的条数
+			var checked = new Array;
+			var rows = document.getElementsByName("zj");
+			var j=0;
+			for ( var i = 0; i < rows.length; i++) {
+				if (rows[i].checked){
+					checked[j]=rows[i].value;
+					j++;
+				}
+			}
+			if(checked.length>=1){
+				confirmx('确认要删除所选的仓库白名单吗？', "${ctx}/cangku/ckhmd/deleteList?ids="+checked,checked);
+			}else{
+				confirmx('请选择至少一行数据', window.location.href);
+				return;
+			}
+		}
+		//将信息导出到excel表格中
+		$(document).ready(function() {
+		$("#btnExport").click(function(){
+			/*submit: function (v, h, f) { return true; }, 
+			点击信息按钮后的回调函数，返回true时表示关闭窗口，参数有三个，
+			v表示所点的按钮的返回值，h表示窗口内容的jQuery对象，f表示窗
+			口内容里的form表单键值 */
+			top.$.jBox.confirm("确认要导出用户数据吗？","系统提示",function(v,h,f){
+				if(v == "ok"){
+					exportTable('contentTable',"","","仓库黑名单数据",'${ctx}');
+					//$("#searchForm").attr("action","${ctx}/shebei/sbcc/export?id=${sbcc.id}&pageNo=${page.pageNo}&pageSize=${page.pageSize}").submit();
+				}
+			},{buttonsFocus:1});
+			top.$('.jbox-body .jbox-icon').css('top','55px');
+		});
+	});
+		
+		function addf() {
+			window.location.href = "${ctx}/cangku/ckhmd/form";
+		}
+	</script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="${ctx}/cangku/ckhmd/list/">仓库黑名单列表</a></li>
+		<%-- <shiro:hasPermission name="cangku:ckhmd:edit"><li><a href="${ctx}/cangku/ckhmd/form">仓库黑名单添加</a></li></shiro:hasPermission> --%>
+		<button class="btn pull-right btn-primary" onclick="addf();">新增</button>
+	</ul>
+	<form:form id="searchForm" modelAttribute="ckhmd" action="${ctx}/cangku/ckhmd/list" method="post" class="breadcrumb form-search">
+		<input id="pageNo" name="pageNo" type="hidden" value="${page.pageNo}"/>
+		<input id="pageSize" name="pageSize" type="hidden" value="${page.pageSize}"/>
+		<label>名称 ：</label><form:input path="name" htmlEscape="false" maxlength="50" class="input-small"/>
+		&nbsp;<input id="btnSubmit" class="btn btn-primary" type="submit" value="查询"/>
+	</form:form>
+	<tags:message content="${message}"/>
+	<table id="contentTable" class="table table-striped table-bordered table-condensed">
+		<thead>
+			<tr>
+				<th width="5%">选择</th>
+				<th>仓库编号</th>
+				<th>物料编码</th>
+				<%-- <shiro:hasPermission name="cangku:ckhmd:edit"><th>操作</th></shiro:hasPermission> --%>
+			</tr>
+		</thead>
+		<tbody>
+		<c:forEach items="${page.list}" var="ckhmd">
+			<tr>
+				<%-- <td><a href="${ctx}/cangku/ckhmd/form?id=${ckhmd.id}">${ckhmd.id}</a></td> --%>
+				<td><input type="checkbox" name="zj" value="${ckhmd.id}"/></td>
+				<td>${ckhmd.ipCkCkbh.ckbh}</td>
+				<td>${ckhmd.ipWlbmWlbm.wlbm}</td>
+				<%-- <shiro:hasPermission name="cangku:ckhmd:edit"><td>
+    				<a href="${ctx}/cangku/ckhmd/form?id=${ckhmd.id}">修改</a>
+					<a href="${ctx}/cangku/ckhmd/delete?id=${ckhmd.id}&ipCkCkbh=${ipCkCkbh}" onclick="return confirmx('确认要删除该仓库黑名单吗？', this.href)">删除</a>
+				</td></shiro:hasPermission> --%>
+			</tr>
+		</c:forEach>
+		</tbody>
+	</table>
+	<div>
+		<button class="btn btn-primary" onclick="editList('zj','${ctx}/cangku/ckhmd/form')">编辑</button>
+		<button class="btn btn-primary" onclick="delList();">删除</button>
+		<button class="btn btn-primary" id="btnExport">导出</button>
+	</div>
+	<div class="pagination">${page}</div>
+</body>
+</html>

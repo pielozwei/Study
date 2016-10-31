@@ -1,0 +1,283 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>质量检测管理</title>
+<meta name="decorator" content="default" />
+<style>
+.red {
+	background-color: #E20A0A;
+	color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#jyxmbh").focus();
+		$("#inputForm").validate();
+	});
+</script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li class="active">
+			<a href="${ctx}/ip/techniqueCheckItem/form?id=${techniqueCheckItem.id}">新增质量检测项 </a>
+		</li>
+		<li class="pull-right">
+				<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存" onclick="$('#inputForm').submit();" />
+				<input type='button' class="btn btn-primary" value='重置' onClick="$('#inputForm')[0].reset();">
+				<input id="btnCancel" class="btn" type="button" value="返 回" onclick="history.go(-1)" />		
+		</li>
+	</ul>
+	<br />
+	<form:form id="inputForm" modelAttribute="techniqueCheckItem" action="${ctx}/ip/techniqueCheckItem/save" method="post" class="form-horizontal">
+		<form:hidden path="id" />
+		<tags:message content="${message}" />
+		<table id="jbxx" >
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmbh">质量检测项编码:</label>
+					<div class="controls">
+						<form:input path="jyxmbh" htmlEscape="false" maxlength="200" class="required"/>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="xssx">显示顺序:</label>
+					<div class="controls">
+						<form:input path="xssx" htmlEscape="false" maxlength="200" class="required"/>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmmc">名称:</label>
+					<div class="controls">
+						<form:input path="jyxmmc" htmlEscape="false" maxlength="200" class="required"/>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmjc">简称:</label>
+					<div class="controls">
+						<form:input path="jyxmjc" htmlEscape="false" maxlength="200" class="required"/>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="gylx_id">工序:</label>
+					<div class="controls">
+						<tags:treeselect id="gylx_id" name="techniqueCheckItem.technique.id" value="${techniqueCheckItem.technique.id}" labelName="technique.mc"
+							labelValue="${techniqueCheckItem.technique.mc}" title="工序名称" url="/ip/technique/treeData"/>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="">类别:</label>
+					<div class="controls">
+						<form:select path="">
+								<form:options items="${fns:getDictList('d_gylx')}" itemValue="value" itemLabel="label" htmlEscape="false"/>
+						</form:select>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="">物料:</label>
+					<div class="controls">
+						<tags:treeselect id="" name="" value="${list.id}" labelName="name"
+								labelValue="${list.name}" title="产品编码" url="/ip/wllb/treeData"/>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="">物料编码:</label>
+					<div class="controls">
+						<form:input path="" id="gylxtag" name="gylxtag" htmlEscape="false" maxlength="200" readonly="true"/>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmbzz">标准值:</label>
+					<div class="controls">
+						<form:input path="jyxmbzz" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmdw">计量单位：</label>
+					<div class="controls">
+						<form:select  path="jyxmdw" class="required">
+							<option value='千克'>千克</option>
+							<option value='吨'>吨</option>
+							<option value='克'>克</option>
+							<option value='其它'>其它</option>
+						</form:select>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmsxz">上限:</label>
+					<div class="controls">
+						<form:input path="jyxmsxz" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyxmxxz">下限:</label>
+					<div class="controls">
+						<form:input path="jyxmxxz" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyqj">检验器具:</label>
+					<div class="controls">
+						<form:input path="jyqj" htmlEscape="false" maxlength="200"
+							class="required" />
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyff">检验方法:</label>
+					<div class="controls">
+
+						<form:select path="jyff">
+							<option value='0'>快速检验法</option>
+							<option value='1'>全面检验法</option>
+						</form:select>
+
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jypc">检验频次:</label>
+					<div class="controls">
+						<form:input path="jypc" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jyfs">检验方式:</label>
+					<div class="controls">
+						<form:select path="jyfs">
+							<option value='0'>抽检</option>
+							<option value='1'>全检</option>
+						</form:select>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="sfzj">是否自检:</label>
+					<div class="controls">
+						<form:select path="sfzj">
+							<option value='0'>无</option>
+							<option value='1'>记录点</option>
+							<option value='2'>见证点</option>
+							<option value='3'>停工待检点</option>
+						</form:select>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group" >
+					<label class="control-label" for="bfhxdclfs" >不符合项处理方式:</label>
+					<div class="controls" >
+						<form:select  path="bfhxdclfs" >
+							<option value='0'>照用</option>
+							<option value='1'>返工</option>
+							<option value='2'>返修</option>
+							<option value='3'>特殊处理</option>
+							<option value='4'>标准返工</option>
+						</form:select>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="sfjsz">是否计算值:</label>
+					<div class="controls">
+						<form:select path="sfjsz">
+							<option value='0'>否</option>
+							<option value='1'>是</option>
+						</form:select>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="cjczbzh">抽检参照标准号:</label>
+					<div class="controls">
+						<form:input path="cjczbzh" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="control-group">
+					<label class="control-label" for="jsgs">计算公式:</label>
+					<div class="controls">
+						<form:input path="jsgs" htmlEscape="false" maxlength="200" />
+					</div>
+				</div>
+			</td>	
+			<td>	
+				<div class="control-group">
+					<label class="control-label" for="sfqy">是否启用:</label>
+					<div class="controls">
+						<form:select path="sfqy">
+							<form:options items="${fns:getDictList('yes_no')}" itemValue="value" itemLabel="label" htmlEscape="false"/>
+						</form:select>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div class="control-group">
+				<label class="control-label" for="bz">备注:</label>
+				<div class="controls">
+					<form:textarea path="bz" htmlEscape="false" rows="4" maxlength="200" class="input-xxlarge"/>
+				</div>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		
+	</form:form>
+</body>
+</html>

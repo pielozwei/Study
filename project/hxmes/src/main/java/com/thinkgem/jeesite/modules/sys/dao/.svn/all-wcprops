@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao
+END
+OfficeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/OfficeDao.java
+END
+MyBatisDictDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/MyBatisDictDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/UserDao.java
+END
+LogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/LogDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/RoleDao.java
+END
+DictDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/DictDao.java
+END
+MenuDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/MenuDao.java
+END
+AreaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/dao/AreaDao.java
+END

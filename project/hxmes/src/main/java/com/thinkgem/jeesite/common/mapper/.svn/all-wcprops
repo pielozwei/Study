@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/hxmes_hibernate/!svn/ver/134/hxmes/src/main/java/com/thinkgem/jeesite/common/mapper
+END
+JaxbMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/mapper/JaxbMapper.java
+END
+BeanMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/common/mapper/BeanMapper.java
+END
+JsonMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hxmes_hibernate/!svn/ver/134/hxmes/src/main/java/com/thinkgem/jeesite/common/mapper/JsonMapper.java
+END

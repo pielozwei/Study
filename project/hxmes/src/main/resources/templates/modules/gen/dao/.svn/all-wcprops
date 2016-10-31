@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/dao
+END
+dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/dao/dao.xml
+END
+mapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/dao/mapper.xml
+END
+entity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/dao/entity.xml
+END

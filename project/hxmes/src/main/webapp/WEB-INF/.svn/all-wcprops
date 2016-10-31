@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/hxmes_hibernate/!svn/ver/329/hxmes/src/main/webapp/WEB-INF
+END
+ckfinder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/hxmes_hibernate/!svn/ver/294/hxmes/src/main/webapp/WEB-INF/ckfinder.xml
+END
+decorators.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/decorators.xml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/WEB-INF/.gitignore
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/hxmes_hibernate/!svn/ver/313/hxmes/src/main/webapp/WEB-INF/web.xml
+END

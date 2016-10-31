@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao
+END
+CategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/CategoryDao.java
+END
+LinkDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/LinkDao.java
+END
+CommentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/CommentDao.java
+END
+GuestbookDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/GuestbookDao.java
+END
+ArticleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/ArticleDao.java
+END
+SiteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/dao/SiteDao.java
+END

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop
+END
+activiti.mssql.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mssql.drop.engine.sql
+END
+activiti.mysql.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mysql.drop.history.sql
+END
+activiti.oracle.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.oracle.drop.history.sql
+END
+activiti.postgres.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.postgres.drop.history.sql
+END
+activiti.db2.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.db2.drop.history.sql
+END
+activiti.h2.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.h2.drop.history.sql
+END
+activiti.mysql.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mysql.drop.engine.sql
+END
+activiti.oracle.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.oracle.drop.engine.sql
+END
+activiti.postgres.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.postgres.drop.engine.sql
+END
+activiti.db2.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.db2.drop.engine.sql
+END
+activiti.h2.drop.engine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.h2.drop.engine.sql
+END
+activiti.mssql.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mssql.drop.identity.sql
+END
+activiti.mysql.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mysql.drop.identity.sql
+END
+activiti.oracle.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.oracle.drop.identity.sql
+END
+activiti.postgres.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.postgres.drop.identity.sql
+END
+activiti.mssql.drop.history.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.mssql.drop.history.sql
+END
+activiti.db2.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.db2.drop.identity.sql
+END
+activiti.h2.drop.identity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/act/drop/activiti.h2.drop.identity.sql
+END

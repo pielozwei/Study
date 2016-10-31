@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/security
+END
+CaptchaException.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/security/CaptchaException.java
+END
+UsernamePasswordToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/security/UsernamePasswordToken.java
+END
+FormAuthenticationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/security/FormAuthenticationFilter.java
+END
+SystemAuthorizingRealm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/security/SystemAuthorizingRealm.java
+END

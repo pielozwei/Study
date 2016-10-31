@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao
+END
+EmployeeEducationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeEducationDao.java
+END
+ToolDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ToolDao.java
+END
+ScollingJobPlanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/282/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ScollingJobPlanDao.java
+END
+TechniqueDocumentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueDocumentDao.java
+END
+EquipmentBOMDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentBOMDetailDao.java
+END
+TechniqueWorkcenterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueWorkcenterDao.java
+END
+MaterialServiceProviderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/160/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/MaterialServiceProviderDao.java
+END
+TechniqueEnergyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueEnergyDao.java
+END
+JldwDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/249/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/JldwDao.java
+END
+ProductBOMDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/409/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ProductBOMDetailDao.java
+END
+TechniqueStoreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueStoreDao.java
+END
+TechniqueCheckItemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueCheckItemDao.java
+END
+ReferenceMessageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/282/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ReferenceMessageDao.java
+END
+OrganizationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/332/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/OrganizationDao.java
+END
+WorkCenterWorkTimeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkCenterWorkTimeDao.java
+END
+EmployeeProjectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeProjectDao.java
+END
+EquipmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/201/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentDao.java
+END
+CalendarDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/330/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/CalendarDao.java
+END
+EquipmentFieldDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentFieldDao.java
+END
+EmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/421/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeDao.java
+END
+StoreBlackListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/StoreBlackListDao.java
+END
+EmployeeHonorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeHonorDao.java
+END
+TechniqueParameterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueParameterDao.java
+END
+OrganizationPositionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/OrganizationPositionDao.java
+END
+EquipmentSparePartDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentSparePartDao.java
+END
+EmployeeContactDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/330/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeContactDao.java
+END
+EquipmentTechParamDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentTechParamDao.java
+END
+EmployeeAwardDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeAwardDao.java
+END
+MaterialDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/160/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/MaterialDao.java
+END
+ScollingJobPlanTaskDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/343/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ScollingJobPlanTaskDao.java
+END
+EquipmentFaultDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentFaultDao.java
+END
+EmployeePositionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeePositionDao.java
+END
+WorkCenterOrganizationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkCenterOrganizationDao.java
+END
+ToolCategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ToolCategoryDao.java
+END
+EmployeePositionRankDirectorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeePositionRankDirectorDao.java
+END
+EmployeeAppraisalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeAppraisalDao.java
+END
+WorkCenterEquipmentFieldDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkCenterEquipmentFieldDao.java
+END
+EquipmentDefectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentDefectDao.java
+END
+TechniqueDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueDao.java
+END
+OrganizationDepartmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/OrganizationDepartmentDao.java
+END
+EquipmentModelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/255/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentModelDao.java
+END
+StoreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/StoreDao.java
+END
+CalendarDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/CalendarDetailDao.java
+END
+OrganizationDirectorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/OrganizationDirectorDao.java
+END
+EquipmentMonitorParamDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentMonitorParamDao.java
+END
+StandardProductDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/StandardProductDao.java
+END
+WorkCenterCapacityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkCenterCapacityDao.java
+END
+ToolTechParamDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ToolTechParamDao.java
+END
+TechniqueOpsStepDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueOpsStepDao.java
+END
+MaterialTechParameterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hxmes_hibernate/!svn/ver/160/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/MaterialTechParameterDao.java
+END
+EquipmentServiceProviderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentServiceProviderDao.java
+END
+EquipmentOpsSpecDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentOpsSpecDao.java
+END
+EquipmentCategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/244/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentCategoryDao.java
+END
+TechniqueOutputDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueOutputDao.java
+END
+EquipmentDocumentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentDocumentDao.java
+END
+ProductBOMSheetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/409/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ProductBOMSheetDao.java
+END
+WorkShiftDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/267/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkShiftDao.java
+END
+WorkCenterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/WorkCenterDao.java
+END
+EmployeePoliticalStatusDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeePoliticalStatusDao.java
+END
+StoreWhiteListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/StoreWhiteListDao.java
+END
+ProviderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/118/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ProviderDao.java
+END
+CalendarMaintainDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/CalendarMaintainDao.java
+END
+MaterialCategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/284/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/MaterialCategoryDao.java
+END
+EquipmentBOMSheetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EquipmentBOMSheetDao.java
+END
+EmployeePositionDirectorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeePositionDirectorDao.java
+END
+EmployeeCareerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/EmployeeCareerDao.java
+END
+TaskDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/282/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TaskDao.java
+END
+TechniqueInputDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/226/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/TechniqueInputDao.java
+END
+OrganizationPositionRankDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/94/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/OrganizationPositionRankDao.java
+END
+ToolServiceProviderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/146/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/dao/ToolServiceProviderDao.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa
+END
+jeesite_mssql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa/jeesite_mssql.sql
+END
+jeesite_data.xls
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa/jeesite_data.xls
+END
+jeesite.erm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa/jeesite.erm
+END
+jeesite_mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa/jeesite_mysql.sql
+END
+jeesite_oracle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/db/oa/jeesite_oracle.sql
+END

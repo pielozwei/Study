@@ -1,0 +1,135 @@
+/**
+ * There are <a href="https://github.com/thinkgem/jeesite">JeeSite</a> code generation
+ */
+package com.thinkgem.jeesite.modules.ip.service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.google.common.collect.Sets;
+import com.thinkgem.jeesite.common.persistence.Page;
+import com.thinkgem.jeesite.common.service.BaseService;
+import com.thinkgem.jeesite.common.utils.StringUtils;
+import com.thinkgem.jeesite.modules.ip.entity.EquipmentBOMDetail;
+import com.thinkgem.jeesite.modules.ip.dao.EquipmentBOMSheetDao;
+import com.thinkgem.jeesite.modules.ip.dao.EquipmentBOMDetailDao;
+
+/**
+ * 设备BOM明细Controller
+ * @author LiHR
+ * @version 2016-07-06
+ */
+@Component
+@Transactional(readOnly = true)
+public class EquipmentBOMDetailService extends BaseService {
+
+	@Autowired
+	private EquipmentBOMDetailDao equipmentBOMDetailDao;
+	@Autowired
+	private EquipmentBOMSheetDao equipmentBOMSheetDao;
+	public EquipmentBOMDetail get(String id) {
+		return equipmentBOMDetailDao.get(id);
+	}
+	
+	public Page<EquipmentBOMDetail> find(Page<EquipmentBOMDetail> page, EquipmentBOMDetail equipmentBOMDetail,String equipmentBOMSheetId) {
+		DetachedCriteria dc = equipmentBOMDetailDao.createDetachedCriteria();
+		dc.createAlias("equipmentBOMSheet", "equipmentBOMSheet");
+		dc.createAlias("equipmentModel", "equipmentModel");
+		if (StringUtils.isNotEmpty(equipmentBOMSheetId)){
+			dc.add(Restrictions.eq("equipmentBOMSheet.id", equipmentBOMSheetId));
+		}
+		if (equipmentBOMDetail.getEquipmentModel()!=null && StringUtils.isNotEmpty(equipmentBOMDetail.getEquipmentModel().getSbggxhmc())){
+			dc.add(Restrictions.like("equipmentModel.sbggxhmc", "%"+equipmentBOMDetail.getEquipmentModel().getSbggxhmc()+"%"));
+		}
+		dc.add(Restrictions.eq(EquipmentBOMDetail.FIELD_DEL_FLAG, EquipmentBOMDetail.DEL_FLAG_NORMAL));
+		dc.addOrder(Order.asc("equipmentBOMSheet.sbbomdbh"));
+		return equipmentBOMDetailDao.find(page, dc);
+	}
+	
+	@Transactional(readOnly = false)
+	public void save(EquipmentBOMDetail equipmentBOMDetail) {
+		equipmentBOMDetailDao.clear();
+		equipmentBOMDetailDao.save(equipmentBOMDetail);
+	}
+	
+	@Transactional(readOnly = false)
+	public void delete(String id) {
+		EquipmentBOMDetail equipmentBOMDetail=(EquipmentBOMDetail) equipmentBOMDetailDao.getSession().get(EquipmentBOMDetail.class, id);
+		equipmentBOMDetailDao.getSession().delete(equipmentBOMDetail);
+	}
+	
+	public List<EquipmentBOMDetail> findByEquipmentBOMSheetId(String equipmentBOMSheetId) {
+		DetachedCriteria dc = equipmentBOMDetailDao.createDetachedCriteria();
+		dc.add(Restrictions.eq(EquipmentBOMDetail.FIELD_DEL_FLAG, EquipmentBOMDetail.DEL_FLAG_NORMAL));
+		dc.add(Restrictions.eq("equipmentBOMSheet.id", equipmentBOMSheetId));
+		return equipmentBOMDetailDao.find(dc);
+	}
+	public List<EquipmentBOMDetail> findAll() {
+		return equipmentBOMDetailDao.find(equipmentBOMDetailDao.createDetachedCriteria());
+	}
+
+//	public List<EquipmentBOMDetail> findByUser(boolean isCurrentEquipmentBOMDetail, String module){
+//		DetachedCriteria dc = equipmentBOMDetailDao.createDetachedCriteria();
+//		dc.add(Restrictions.eq("delFlag", EquipmentBOMDetail.DEL_FLAG_NORMAL));
+//		List<EquipmentBOMDetail> list = equipmentBOMDetailDao.find(dc);
+//		// 将没有父节点的节点，找到父节点
+//		Set<String> parentIdSet = Sets.newHashSet();
+//		for (EquipmentBOMDetail e : list){
+//			if (e.getParent()!=null && StringUtils.isNotBlank(e.getParent().getId())){
+//				boolean isExistParent = false;
+//				for (EquipmentBOMDetail e2 : list){
+//					if (e.getParent().getId().equals(e2.getId())){
+//						isExistParent = true;
+//						break;
+//					}
+//				}
+//				if (!isExistParent){
+//					parentIdSet.add(e.getParent().getId());
+//				}
+//			}
+//		}
+//		if (parentIdSet.size() > 0){
+//			dc = equipmentBOMDetailDao.createDetachedCriteria();
+//			dc.add(Restrictions.in("id", parentIdSet));
+//			dc.add(Restrictions.eq("delFlag", EquipmentBOMDetail.DEL_FLAG_NORMAL));
+//			list.addAll(0, equipmentBOMDetailDao.find(dc));
+//		}
+//	return list;
+//}
+//	public List<Map<String, Object>> getTreeData() {
+//		List<EquipmentBOMDetail> list=findByUser(true, null);
+//		List<Map<String,Object>> listMap=new ArrayList<Map<String,Object>>();
+//		for(EquipmentBOMDetail EquipmentBOMDetail:list){
+//			Map<String,Object> map=new HashMap<String, Object>();
+//			map.put("id", EquipmentBOMDetail.getId());
+//			EquipmentBOMDetail p_EquipmentBOMDetail=EquipmentBOMDetail.getParent();
+//			map.put("pId",p_EquipmentBOMDetail==null?'0':p_EquipmentBOMDetail.getId());
+//			map.put("name", EquipmentBOMDetail.getEquipmentModel().getSbggxhmc());
+//			map.put("module", "equipmentBOMDetail");
+//			listMap.add(map);
+//		}
+//		return listMap;
+//	}
+
+	/*只找子节点*/
+	public List<EquipmentBOMDetail> findSun(String nodeId){
+		List<EquipmentBOMDetail> list=new ArrayList<EquipmentBOMDetail>();
+		DetachedCriteria dc = equipmentBOMDetailDao.createDetachedCriteria();
+		dc.add(Restrictions.eq("delFlag", EquipmentBOMDetail.DEL_FLAG_NORMAL));
+		if (StringUtils.isNotEmpty(nodeId)){
+			dc.add(Restrictions.eq("parent.id", nodeId));
+		}else return list;
+		list = equipmentBOMDetailDao.find(dc);
+		return list;
+	}
+}

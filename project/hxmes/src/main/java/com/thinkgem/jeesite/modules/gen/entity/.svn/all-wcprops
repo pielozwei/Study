@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/hxmes_hibernate/!svn/ver/199/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity
+END
+GenConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenConfig.java
+END
+GenTableColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/103/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenTableColumn.java
+END
+GenTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/103/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenTable.java
+END
+GenTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/103/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenTemplate.java
+END
+GenCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenCategory.java
+END
+GenScheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/199/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/entity/GenScheme.java
+END

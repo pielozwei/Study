@@ -1,0 +1,100 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>岗位信息管理管理</title>
+<meta name="decorator" content="default" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#ywlb_id").focus();
+		$("#inputForm").validate();
+	});
+</script>
+</head>
+<body>
+	<!-- 
+	<ul class="nav nav-tabs">
+		<li><a href="${ctx}/ip/organizationPosition/">岗位信息管理列表</a></li>
+		<li class="active"><a href="${ctx}/ip/organizationPosition/form?id=${organizationPosition.id}">岗位信息管理<shiro:hasPermission name="ip:organizationPosition:edit">${not empty organizationPosition.id?'修改':'添加'}</shiro:hasPermission><shiro:lacksPermission name="ip:organizationPosition:edit">查看</shiro:lacksPermission></a></li>
+	</ul>
+	 -->
+	<br />
+
+	<form:form id="inputForm" modelAttribute="organizationPosition"
+		action="${ctx}/ip/organizationPosition/save" method="post"
+		class="form-horizontal">
+		<form:hidden path="id" />
+		<tags:message content="${message}" />
+		<div class="control-group">
+			<label class="control-label" for="gwbm">岗位编码:</label>
+			<div class="controls">
+				<form:input path="gwbm" htmlEscape="false" rows="4" maxlength="200"
+					class="input-large required" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="gwmc">岗位名称:</label>
+			<div class="controls">
+				<form:input path="gwmc" htmlEscape="false" rows="4" maxlength="200"
+					class="input-large required" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="gwms">岗位描述:</label>
+			<div class="controls">
+				<form:textarea path="gwms" htmlEscape="false" maxlength="200"
+					class="input-large" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="ywlb_id">机构人员业务分类:</label>
+			<div class="controls">
+				<form:select path="ywlb_id">
+					<form:options items="${fns:getDictList('yes_no')}" itemLabel="label"
+						itemValue="value" htmlEscape="false" />
+				</form:select>
+				&nbsp;
+			</div>
+		</div>
+		<table>
+			<tr>
+
+				<td><div class="control-group">
+						<label class="control-label" for="zzjgbm_id">部门:</label>
+						<div class="controls">
+							<tags:treeselect id="zzjgbm_id" name="zzjgbm_id"
+								value="${list.id}" labelName="name"
+								labelValue="${list.name}" title="员工"
+								url="/ip/organization/treeData" />
+						</div>
+					</div></td>
+			</tr>
+		</table>
+		<div class="control-group">
+			<label class="control-label" for="sfqy">是否启用:</label>
+			<div class="controls">
+				<form:select path="sfqy">
+					<form:options items="${fns:getDictList('yes_no')}"
+						itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+				&nbsp;
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="xssx">显示顺序:</label>
+			<div class="controls">
+				<form:input path="xssx" htmlEscape="false" rows="4" maxlength="200"
+					class="input-large required" />
+			</div>
+		</div>
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:organizationPosition:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit"
+					value="保 存" />&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回"
+				onclick="history.go(-1)" />
+		</div>
+	</form:form>
+</body>
+</html>

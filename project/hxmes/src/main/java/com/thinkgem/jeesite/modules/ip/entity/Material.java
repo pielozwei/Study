@@ -1,0 +1,287 @@
+/**
+ * There are <a href="https://github.com/thinkgem/jeesite">JeeSite</a> code generation
+ */
+package com.thinkgem.jeesite.modules.ip.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+import org.hibernate.search.annotations.IndexedEmbedded;
+
+import com.thinkgem.jeesite.common.persistence.IdEntity;
+import com.thinkgem.jeesite.common.utils.excel.annotation.ExcelField;
+
+/**
+ * 物料编码信息Entity
+ * @author ZhangHD
+ * @version 2016-06-03
+ */
+@Entity
+@Table(name = "ip_wlbm")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+public class Material extends IdEntity<Material> {
+	private static final long serialVersionUID = 1L;
+	private String wlbm;// 物料编码 --not null
+	private MaterialCategory wllb;// 物料类别编码 --not null
+	private Integer wlzhlb;// 物料综合类别
+	private Integer wlstx;// 物料实体性
+	private String wlmc;// 物料名称
+	// private String wllbjc;// 物料类别简称---
+	private Integer zyabc;// 重要ABC
+	private Integer pfabc;// 频发ABC
+	private String iaeabm;// iaea编码
+	private String cwbm;// 财务编码
+	private String jlfs;// 计量方式
+	private Jldw jldw;// 计量单位"IP_JLDW_ID" NOT NULL,
+	private Float jhdwcb;// 计量单位成本
+	private String gg;// 规格
+	private String xh;// 型号
+	// private String dz;// 地址---
+	private String bz;// 备注
+	private Integer fyjgts;// 复验间隔天数
+	private Integer zcbcqx;// 最长保存期限
+	private String wljc;// 物料简称 NOT NULL,---
+	private Integer xssx;// 显示顺寻 NOT NULL,---
+	private Integer sfqy;// 是否启用 NOT NULL,---
+	private String jldwmc;// 计量单位名称
+
+	public Material() {
+		super();
+	}
+
+
+	public Material(String id) {
+		this();
+		this.id = id;
+	}
+
+
+	@NotNull(message = "物料编码不能为空")
+	public String getWlbm() {
+		return wlbm;
+	}
+
+
+	public void setWlbm(String wlbm) {
+		this.wlbm = wlbm;
+	}
+
+
+	@ManyToOne
+	@JoinColumn(name = "WLLB_ID")
+	@NotFound(action = NotFoundAction.IGNORE)
+	@IndexedEmbedded
+	@NotNull(message = "物料类别编码不能为空")
+	public MaterialCategory getWllb() {
+		return wllb;
+	}
+
+
+	public void setWllb(MaterialCategory wllb) {
+		this.wllb = wllb;
+		
+	}
+
+
+	public Integer getWlzhlb() {
+		return wlzhlb;
+	}
+
+
+	public void setWlzhlb(Integer wlzhlb) {
+		this.wlzhlb = wlzhlb;
+	}
+
+
+	public Integer getWlstx() {
+		return wlstx;
+	}
+
+
+	public void setWlstx(Integer wlstx) {
+		this.wlstx = wlstx;
+	}
+
+
+	public String getWlmc() {
+		return wlmc;
+	}
+
+
+	public void setWlmc(String wlmc) {
+		this.wlmc = wlmc;
+	}
+
+
+	public Integer getZyabc() {
+		return zyabc;
+	}
+
+
+	public void setZyabc(Integer zyabc) {
+		this.zyabc = zyabc;
+	}
+
+
+	public Integer getPfabc() {
+		return pfabc;
+	}
+
+
+	public void setPfabc(Integer pfabc) {
+		this.pfabc = pfabc;
+	}
+
+
+	public String getIaeabm() {
+		return iaeabm;
+	}
+
+
+	public void setIaeabm(String iaeabm) {
+		this.iaeabm = iaeabm;
+	}
+
+
+	public String getCwbm() {
+		return cwbm;
+	}
+
+
+	public void setCwbm(String cwbm) {
+		this.cwbm = cwbm;
+	}
+
+
+	public String getJlfs() {
+		return jlfs;
+	}
+
+
+	public void setJlfs(String jlfs) {
+		this.jlfs = jlfs;
+	}
+
+
+	@ManyToOne
+	@JoinColumn(name = "JLDW_ID")
+	public Jldw getJldw() {
+		return jldw;
+	}
+
+
+	public void setJldw(Jldw jldw) {
+		this.jldw = jldw;
+	}
+
+
+	public Float getJhdwcb() {
+		return jhdwcb;
+	}
+
+
+	public void setJhdwcb(Float jhdwcb) {
+		this.jhdwcb = jhdwcb;
+	}
+
+
+	public String getBz() {
+		return bz;
+	}
+
+
+	public void setBz(String bz) {
+		this.bz = bz;
+	}
+
+
+	public Integer getFyjgts() {
+		return fyjgts;
+	}
+
+
+	public void setFyjgts(Integer fyjgts) {
+		this.fyjgts = fyjgts;
+	}
+
+
+	public Integer getZcbcqx() {
+		return zcbcqx;
+	}
+
+
+	public void setZcbcqx(Integer zcbcqx) {
+		this.zcbcqx = zcbcqx;
+	}
+
+
+	@ExcelField(title = "规格", align = 2, sort = 30)
+	public String getGg() {
+		return gg;
+	}
+
+
+	public void setGg(String gg) {
+		this.gg = gg;
+	}
+
+
+	@ExcelField(title = "型号", align = 2, sort = 35)
+	public String getXh() {
+		return xh;
+	}
+
+
+	public void setXh(String xh) {
+		this.xh = xh;
+	}
+
+
+	public String getWljc() {
+		return wljc;
+	}
+
+
+	public void setWljc(String wljc) {
+		this.wljc = wljc;
+	}
+
+
+	public Integer getXssx() {
+		return xssx;
+	}
+
+
+	public void setXssx(Integer xssx) {
+		this.xssx = xssx;
+	}
+
+
+	public Integer getSfqy() {
+		return sfqy;
+	}
+
+
+	public void setSfqy(Integer sfqy) {
+		this.sfqy = sfqy;
+	}
+
+	@Transient
+	public String getJldwmc() {
+		jldwmc = this.jldw.getJldwmc();
+		return jldwmc;
+	}
+
+	public void setJldwmc(String jldwmc) {
+		this.jldwmc = jldwmc;
+	}
+	
+}

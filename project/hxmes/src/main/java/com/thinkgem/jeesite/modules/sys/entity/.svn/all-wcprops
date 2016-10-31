@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Log.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Role.java
+END
+Dict.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Dict.java
+END
+Menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Menu.java
+END
+Area.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Area.java
+END
+Office.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/Office.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/entity/User.java
+END

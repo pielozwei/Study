@@ -1,0 +1,55 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+	<title>政治面貌经历管理</title>
+	<meta name="decorator" content="default"/>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#zg_id").focus();
+			$("#inputForm").validate();
+		});
+	</script>
+</head>
+<body>
+	<br/>
+	<form:form id="inputForm" modelAttribute="employeePoliticalStatus" action="${ctx}/ip/employeePoliticalStatus/save" method="post" class="form-horizontal">
+		<form:hidden path="id"/>
+		<tags:message content="${message}"/>
+		<div class="control-group">
+			<label class="control-label" for="zg_id">职工姓名:</label>
+			<div class="controls">
+				<tags:treeselect id="zg_id" name="zg_id"
+				 value="${list.id}" labelName="name" labelValue="${list.name}"
+				title="员工" url="/ip/employee/treeData"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="xl">序列:</label>
+			<div class="controls">
+				<form:input path="xl" htmlEscape="false" maxlength="200" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="zzmm">政治面貌:</label>
+			<div class="controls">
+			<form:select path="zzmm" >
+					<form:options items="${fns:getDictList('d_zzmm')}" itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+				 </div>
+			</div>
+		<div class="control-group">
+			<label class="control-label" for="jrsj">加入时间:</label>
+			<div class="controls">
+				<form:input path="jrsj" name="jrsj" type="text" maxlength="20" class="Wdate required" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});"/>
+			</div>
+		</div>
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeePoliticalStatus:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存"/>&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回" onclick="history.go(-1)"/>
+		</div>
+	</form:form>
+</body>
+</html>

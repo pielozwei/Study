@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/hxmes_hibernate/!svn/ver/235/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity
+END
+TestTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/229/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestTree.java
+END
+TestChild.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/235/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestChild.java
+END
+TestMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/235/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestMain.java
+END
+TestRtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/235/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestRtable.java
+END
+TestLtree.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/229/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestLtree.java
+END
+TestDataChild.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/229/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestDataChild.java
+END
+TestDataMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/229/hxmes/src/main/java/com/thinkgem/jeesite/modules/test/entity/TestDataMain.java
+END

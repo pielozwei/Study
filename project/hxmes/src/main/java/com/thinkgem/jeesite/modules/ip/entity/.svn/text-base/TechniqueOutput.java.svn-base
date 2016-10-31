@@ -1,0 +1,112 @@
+/**
+ * There are <a href="https://github.com/thinkgem/jeesite">JeeSite</a> code generation
+ */
+package com.thinkgem.jeesite.modules.ip.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.validator.constraints.Length;
+
+import com.thinkgem.jeesite.common.persistence.IdEntity;
+
+/**
+ * 副产品信息Entity
+ * @author WuWB
+ * @version 2016-06-27
+ */
+@Entity
+@Table(name = "ip_gyfcp")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+public class TechniqueOutput extends IdEntity<TechniqueOutput> {
+	
+	private static final long serialVersionUID = 1L;
+	// private String id; 		// 编号
+	private String jldw_id;
+	private String gygzzx_id; 	// 工艺工作中心ID
+	private String fcpwl_id;
+	private Integer fcplb;
+	private Float sl;
+	private Integer sfqy;
+	private Integer xssx;
+	private String bz;
+
+	public String getJldw_id() {
+		return jldw_id;
+	}
+
+	public void setJldw_id(String jldw_id) {
+		this.jldw_id = jldw_id;
+	}
+
+	public String getGygzzx_id() {
+		return gygzzx_id;
+	}
+
+	public void setGygzzx_id(String gygzzx_id) {
+		this.gygzzx_id = gygzzx_id;
+	}
+
+	public String getFcpwl_id() {
+		return fcpwl_id;
+	}
+
+	public void setFcpwl_id(String fcpwl_id) {
+		this.fcpwl_id = fcpwl_id;
+	}
+
+	public Integer getFcplb() {
+		return fcplb;
+	}
+
+	public void setFcplb(Integer fcplb) {
+		this.fcplb = fcplb;
+	}
+
+	public Integer getSfqy() {
+		return sfqy;
+	}
+
+	public void setSfqy(Integer sfqy) {
+		this.sfqy = sfqy;
+	}
+	
+	public Float getSl(){
+		return sl;
+	}
+
+	public void setSl(Float sl) {
+		this.sl = sl;
+	}
+
+
+	public Integer getXssx() {
+		return xssx;
+	}
+
+	public void setXssx(Integer xssx) {
+		this.xssx = xssx;
+	}
+
+
+	public String getBz() {
+		return bz;
+	}
+
+	public void setBz(String bz) {
+		this.bz = bz;
+	}
+
+	public TechniqueOutput() {
+		super();
+	}
+
+	public TechniqueOutput(String id){
+		this();
+		this.id = id;
+	}
+}
+
+

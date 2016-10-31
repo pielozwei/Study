@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages
+END
+extend.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/extend.mustache
+END
+index.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/index.mustache
+END
+scaffolding.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/scaffolding.mustache
+END
+base-css.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/base-css.mustache
+END
+customize.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/customize.mustache
+END
+components.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/components.mustache
+END
+getting-started.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/getting-started.mustache
+END
+javascript.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/webapp/static/bootstrap/2.3.1/docs/templates/pages/javascript.mustache
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/hxmes_hibernate/!svn/ver/233/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao
+END
+GenSchemeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao/GenSchemeDao.java
+END
+GenTableColumnDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/233/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao/GenTableColumnDao.java
+END
+GenTableDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/233/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao/GenTableDao.java
+END
+GenDataBaseDictDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/103/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao/GenDataBaseDictDao.java
+END
+GenTemplateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/gen/dao/GenTemplateDao.java
+END

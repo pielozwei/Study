@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service
+END
+LogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/LogService.java
+END
+DictService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/DictService.java
+END
+SystemService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/SystemService.java
+END
+AreaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/AreaService.java
+END
+OfficeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/OfficeService.java
+END

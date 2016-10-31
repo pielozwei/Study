@@ -1,0 +1,280 @@
+/**
+ * There are <a href="https://github.com/thinkgem/jeesite">JeeSite</a> code generation
+ */
+package com.thinkgem.jeesite.modules.ip.service;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.google.common.collect.Maps;
+import com.thinkgem.jeesite.common.persistence.Page;
+import com.thinkgem.jeesite.common.service.BaseService;
+import com.thinkgem.jeesite.common.utils.StringUtils;
+import com.thinkgem.jeesite.modules.ip.entity.Employee;
+import com.thinkgem.jeesite.modules.ip.dao.EmployeeContactDao;
+import com.thinkgem.jeesite.modules.ip.dao.EmployeeDao;
+import com.thinkgem.jeesite.modules.sys.dao.UserDao;
+import com.thinkgem.jeesite.modules.sys.entity.User;
+import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+
+/**
+ * 个人信息Service
+ * @author cml
+ * @version 2016-06-22
+ */
+@Component
+@Transactional(readOnly = true)
+public class EmployeeService extends BaseService {
+
+	@Autowired
+	private EmployeeDao employeeDao;
+	@Autowired
+	private EmployeeContactDao employeecontactDao;
+	@Autowired
+	private UserDao userDao;
+	
+	public Employee get(String id) {
+		return employeeDao.get(id);
+	}
+	
+	public Page<Employee> find(Page<Employee> page, Employee employee) {
+		DetachedCriteria dc = employeeDao.createDetachedCriteria();
+		if (StringUtils.isNotEmpty(employee.getId())){
+			dc.add(Restrictions.like("id", "%"+employee.getId()+"%"));
+		}
+		if(!(employee.getXb()==null)){
+			dc.add(Restrictions.eq("xb", employee.getXb()));
+		}
+		if(!(employee.getXtsfdm()==null)){
+			dc.add(Restrictions.eq("xtsfdm", employee.getXtsfdm()));
+		}
+		if (!(employee.getRzsj()==null)){
+			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd"); 
+			try {
+				Date stratDate = sdf.parse((sdf.format(employee.getRzsj()).substring(0,4)+"-01-01"));
+				Date endDate = sdf.parse((sdf.format(employee.getRzsj()).substring(0,4)+"-12-30"));
+				dc.add(Restrictions.between("rzsj", stratDate, endDate));
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+
+		dc.add(Restrictions.eq(Employee.FIELD_DEL_FLAG, Employee.DEL_FLAG_NORMAL));
+		dc.addOrder(Order.asc("xssx"));
+		return employeeDao.find(page, dc);
+	}
+	
+
+	
+	@Transactional(readOnly = false)
+	public void save(Employee employee)   {
+		employeeDao.save(employee);
+		//employeecontactDao.save(employee.getEmployeecontact());
+
+	}
+	
+	
+//	@Transactional(readOnly = false)
+//	public void saveEmployee(EmployeeInfForm employeeinfform)   {
+//		
+//		Employee a=new Employee();
+//			a.setId(employeeinfform.getId());
+//			a.gh=employeeinfform.gh; // 工号
+//			a.xm=employeeinfform.xm; // 姓名
+//			a.xb=employeeinfform.xb; // 性别
+//			a.mzdm=employeeinfform.mzdm; // 民族代码
+//			a.csn=employeeinfform.csn; // 出生年
+//			a.csy=employeeinfform.csy; // 出生月
+//			a.gjdm=employeeinfform.gjdm; // 国籍代码
+//			a.zjlxdm=employeeinfform.zjlxdm; // 证件类型代码
+//			a.zjh=employeeinfform.zjh; // 证件号
+//			a.zyxkdm=employeeinfform.zyxkdm; // 专业学科代码
+//			a.xldm=employeeinfform.xldm;// 学历代码
+//			a.xwdm=employeeinfform.xwdm; // 学位代码
+//			a.dqjszcdm=employeeinfform.dqjszcdm; // 当前技术职称代码
+//			a.dqzzmmdm=employeeinfform.dqzzmmdm; // 当前政治面貌代码
+//			a.hkxzdm=employeeinfform.hkxzdm; // 户口性质代码
+//			a.hkszd=employeeinfform.hkszd; // 户口所在地
+//			a.zpwj=employeeinfform.zpwj; // 照片文件
+//			a.jgdm=employeeinfform.jgdm;// 籍贯代码
+//			a.csd=employeeinfform.csd;// 出生地
+//			a.grjj=employeeinfform.grjj; // 个人简介
+//			a.rzsj=employeeinfform.rzsj; // 入职时间
+//			a.cjgzsj=employeeinfform.cjgzsj; // 参加工作时间
+//			a.jrzyxtsj=employeeinfform.jrzyxtsj; // 进入专业系统时间
+//			a.jrzyxtnd=employeeinfform.jrzyxtnd; // 进入专业系统年度
+//			a.syztdm=employeeinfform.syztdm;
+//			a.xssx=employeeinfform.xssx; // 显示顺序
+//			a.sfdm = employeeinfform.sfdm; 
+//			a.xtsfdm = employeeinfform.xtsfdm;
+//			a.nc = employeeinfform.nc;
+//			employeeDao.save(a);	
+//		
+//	}	
+//	
+//
+//	@Transactional(readOnly = false)
+//	public void saveEmployeeContact(EmployeeInfForm employeeinfform)   {
+//		
+//		EmployeeContact b =new EmployeeContact();
+//
+//		//获取已经保存的人员信息的ID值作为人员联系信息的外键ID
+//	    Employee Emp = employeeDao.getIDfromGH(employeeinfform.gh);
+//	    
+//	    b.zg_id = Emp.getId();
+//	    
+//	    b.sjh=employeeinfform.sjh;
+//		b.yx=employeeinfform.yx;
+//		b.jtlxdh=employeeinfform.jtlxdh;
+//		b.jtzz=employeeinfform.jtzz;
+//		b.jtzzyb=employeeinfform.jtzzyb;
+//		
+//		b.qs1gxdm=employeeinfform.qs1gxdm;
+//		b.qs1xm=employeeinfform.qs1xm;
+//		b.qs1lxfs=employeeinfform.qs1lxfs;
+//		b.qs1szdw=employeeinfform.qs1szdw;
+//		
+//		b.qs2gxdm=employeeinfform.qs2gxdm;
+//		b.qs2xm=employeeinfform.qs2xm;
+//		b.qs2lxfs=employeeinfform.qs2lxfs;
+//		b.qs2szdw=employeeinfform.qs2szdw;
+//		
+//		b.qs3gxdm=employeeinfform.qs3gxdm;
+//		b.qs3xm=employeeinfform.qs3xm;
+//		b.qs3lxfs=employeeinfform.qs3lxfs;
+//		b.qs3szdw=employeeinfform.qs3szdw;
+//		
+//		b.qs4gxdm=employeeinfform.qs4gxdm;
+//		b.qs4xm=employeeinfform.qs4xm;
+//		b.qs4lxfs=employeeinfform.qs4lxfs;
+//		b.qs4szdw=employeeinfform.qs4szdw;
+//		
+//		employeecontactDao.save(b);
+//	}
+	
+	@Transactional(readOnly = false)
+	public void delete(String id) {
+		employeeDao.deleteById(id);
+		employeeDao.DeleteAllRecords(id);
+	}
+	
+//	public EmployeeInfForm getEmployeeInfoById(String Id)
+//	{
+//		Employee emp = employeeDao.getEmployeefromId(Id);
+//		EmployeeContact emc = employeecontactDao.getEmployeeContactfromZGId(Id);
+//		
+//		EmployeeInfForm employeeinfform = new EmployeeInfForm();
+//		employeeinfform.gh=emp.gh; // 工号
+//		employeeinfform.xm=emp.xm; // 姓名
+//		employeeinfform.xb=emp.xb; // 性别
+//		employeeinfform.mzdm=emp.mzdm; // 民族代码
+//		employeeinfform.csn=emp.csn; // 出生年
+//		employeeinfform.csy=emp.csy; // 出生月
+//		employeeinfform.gjdm=emp.gjdm; // 国籍代码
+//		employeeinfform.zjlxdm=emp.zjlxdm; // 证件类型代码
+//		employeeinfform.zjh=emp.zjh; // 证件号
+//		employeeinfform.zyxkdm=emp.zyxkdm; // 专业学科代码
+//		employeeinfform.xldm=emp.xldm;// 学历代码
+//		employeeinfform.xwdm=emp.xwdm; // 学位代码
+//		employeeinfform.dqjszcdm=emp.dqjszcdm; // 当前技术职称代码
+//		employeeinfform.dqzzmmdm=emp.dqzzmmdm; // 当前政治面貌代码
+//		employeeinfform.hkxzdm=emp.hkxzdm; // 户口性质代码
+//		employeeinfform.hkszd=emp.hkszd; // 户口所在地
+//		employeeinfform.zpwj=emp.zpwj; // 照片文件
+//		employeeinfform.jgdm=emp.jgdm;// 籍贯代码
+//		employeeinfform.csd=emp.csd;// 出生地
+//		employeeinfform.grjj=emp.grjj; // 个人简介
+//		employeeinfform.rzsj=emp.rzsj; // 入职时间
+//		employeeinfform.cjgzsj=emp.cjgzsj; // 参加工作时间
+//		employeeinfform.jrzyxtsj=emp.jrzyxtsj; // 进入专业系统时间
+//		employeeinfform.jrzyxtnd=emp.jrzyxtnd; // 进入专业系统年度
+//		employeeinfform.xtsfdm=emp.xtsfdm;//系统身份代码
+//		employeeinfform.xssx=emp.xssx; // 显示顺序 
+//		employeeinfform.nc=emp.nc;//
+//		
+//		employeeinfform.zg_id = emc.zg_id;
+//		employeeinfform.sjh=emc.sjh;
+//		employeeinfform.yx=emc.yx;
+//		employeeinfform.jtlxdh=emc.jtlxdh;
+//		employeeinfform.jtzz=emc.jtzz;
+//		employeeinfform.jtzzyb=emc.jtzzyb;
+//		employeeinfform.qs1gxdm=emc.qs1gxdm;
+//		employeeinfform.qs1xm=emc.qs1xm;
+//		employeeinfform.qs1lxfs=emc.qs1lxfs;
+//		employeeinfform.qs1szdw=emc.qs1szdw;
+//		employeeinfform.qs2gxdm=emc.qs2gxdm;
+//		employeeinfform.qs2xm=emc.qs2xm;
+//		employeeinfform.qs2lxfs=emc.qs2lxfs;
+//		employeeinfform.qs2szdw=emc.qs2szdw;
+//		employeeinfform.qs3gxdm=emc.qs3gxdm;
+//		employeeinfform.qs3xm=emc.qs3xm;
+//		employeeinfform.qs3lxfs=emc.qs3lxfs;
+//		employeeinfform.qs3szdw=emc.qs3szdw;
+//		employeeinfform.qs4gxdm=emc.qs4gxdm;
+//		employeeinfform.qs4xm=emc.qs4xm;
+//		employeeinfform.qs4lxfs=emc.qs4lxfs;
+//		employeeinfform.qs4szdw=emc.qs4szdw;
+//		
+//		return employeeinfform;
+//		
+//	}
+
+	public Integer getNewxssx() {
+		return employeeDao.getNewxssx();
+	}
+
+	public Page<User> findEmployeeUsers(Page<User> page, User user) {
+		User currentUser = UserUtils.getUser();
+		DetachedCriteria dc = userDao.createDetachedCriteria();
+		// 如果不是超级管理员，则不显示超级管理员用户
+		if (!currentUser.isAdmin()){
+			dc.add(Restrictions.ne("id", "1"));  
+		}
+		String sql = "NOT EXISTS(SELECT 1 FROM IP_ZGGRXX t WHERE t.USER_ID = THIS_.ID)";
+		dc.add(Restrictions.sqlRestriction(sql));
+		dc.add(dataScopeFilter(currentUser, "office", ""));
+		dc.add(Restrictions.eq(User.FIELD_DEL_FLAG, User.DEL_FLAG_NORMAL));
+		dc.addOrder(Order.desc("name"));
+		
+		return userDao.find(page, dc);
+	}
+	public List<Employee> findAll() {
+		DetachedCriteria dc = employeeDao.createDetachedCriteria();
+		dc.add(Restrictions.eq(Employee.FIELD_DEL_FLAG, Employee.DEL_FLAG_NORMAL));
+		dc.addOrder(Order.asc("xssx"));
+		return employeeDao.find(dc);
+	}
+	public int getlist(Employee employee){
+		
+		if(StringUtils.isNotEmpty(employee.getId())){
+			return 1;
+		}else{
+			List<Employee> list = findAll();			
+			for (int i=0; i<list.size(); i++){
+				Employee e = list.get(i);
+				if(employee.getGh().equals(e.getGh())){
+					if(e.getXm()!=null)
+						return 0;
+					if(e.getZjh()!=null)
+						return 2;
+					if(e.getXssx()!=null)
+						return 3;
+				}					
+			}
+		}
+		return 1;
+	}	
+}

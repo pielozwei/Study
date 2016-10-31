@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service
+END
+StatsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/StatsService.java
+END
+FileTplService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/FileTplService.java
+END
+CommentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/CommentService.java
+END
+GuestbookService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/GuestbookService.java
+END
+ArticleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/ArticleService.java
+END
+SiteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/SiteService.java
+END
+CategoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/CategoryService.java
+END
+LinkService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/cms/service/LinkService.java
+END

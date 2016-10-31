@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/workflow
+END
+WorkflowProcessDefinitionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/workflow/WorkflowProcessDefinitionService.java
+END
+WorkflowTraceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/java/com/thinkgem/jeesite/modules/sys/service/workflow/WorkflowTraceService.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd
+END
+service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/service.xml
+END
+controller.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/controller.xml
+END
+viewFormMany.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/viewFormMany.xml
+END
+serviceMany.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/serviceMany.xml
+END
+viewList.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/viewList.xml
+END
+viewForm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/hxmes_hibernate/!svn/ver/104/hxmes/src/main/resources/templates/modules/gen/curd/viewForm.xml
+END

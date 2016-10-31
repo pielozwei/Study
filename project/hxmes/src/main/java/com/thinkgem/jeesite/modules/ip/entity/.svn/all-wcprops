@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity
+END
+Jldw.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/250/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Jldw.java
+END
+EmployeeCareer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeCareer.java
+END
+ToolTechParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ToolTechParam.java
+END
+ScollingJobPlanTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/262/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ScollingJobPlanTask.java
+END
+EquipmentFault.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/269/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentFault.java
+END
+Organization.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/330/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Organization.java
+END
+TechniqueInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueInput.java
+END
+OrganizationPositionRank.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/OrganizationPositionRank.java
+END
+TechniqueOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueOutput.java
+END
+EquipmentDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/261/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentDocument.java
+END
+ToolServiceProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/148/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ToolServiceProvider.java
+END
+ToolCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ToolCategory.java
+END
+Tool.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Tool.java
+END
+WorkCenterEquipmentField.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkCenterEquipmentField.java
+END
+TechniqueWorkcenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/hxmes_hibernate/!svn/ver/417/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueWorkcenter.java
+END
+Provider.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/271/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Provider.java
+END
+CalendarMaintain.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/CalendarMaintain.java
+END
+EquipmentTechParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/258/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentTechParam.java
+END
+EquipmentBOMSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/269/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentBOMSheet.java
+END
+ProductBOMDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/289/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ProductBOMDetail.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/hxmes_hibernate/!svn/ver/270/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Task.java
+END
+TechniqueOpsStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/423/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueOpsStep.java
+END
+MaterialTechParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hxmes_hibernate/!svn/ver/284/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/MaterialTechParameter.java
+END
+EquipmentServiceProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/148/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentServiceProvider.java
+END
+EmployeePosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeePosition.java
+END
+WorkCenterWorkTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/335/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkCenterWorkTime.java
+END
+ProductBOMSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/334/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ProductBOMSheet.java
+END
+WorkCenterOrganization.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/189/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkCenterOrganization.java
+END
+Calendar.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Calendar.java
+END
+EmployeePositionRankDirector.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/hxmes_hibernate/!svn/ver/330/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeePositionRankDirector.java
+END
+EmployeeAppraisal.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/399/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeAppraisal.java
+END
+WorkCenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/hxmes_hibernate/!svn/ver/338/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkCenter.java
+END
+StoreBlackList.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/263/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/StoreBlackList.java
+END
+EmployeeHonor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeHonor.java
+END
+OrganizationDepartment.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/OrganizationDepartment.java
+END
+EquipmentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/255/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentModel.java
+END
+OrganizationPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/OrganizationPosition.java
+END
+EquipmentSparePart.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/359/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentSparePart.java
+END
+MaterialServiceProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/284/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/MaterialServiceProvider.java
+END
+Store.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/hxmes_hibernate/!svn/ver/398/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Store.java
+END
+CalendarDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/CalendarDetail.java
+END
+OrganizationDirector.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/OrganizationDirector.java
+END
+EquipmentMonitorParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentMonitorParam.java
+END
+TechniqueStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/417/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueStore.java
+END
+TechniqueCheckItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/420/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueCheckItem.java
+END
+EquipmentOpsSpec.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/269/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentOpsSpec.java
+END
+EmployeeProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeProject.java
+END
+EmployeeEducation.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/399/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeEducation.java
+END
+WorkShift.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/267/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkShift.java
+END
+EmployeePoliticalStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeePoliticalStatus.java
+END
+Technique.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/333/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Technique.java
+END
+TechniqueParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/423/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueParameter.java
+END
+MaterialCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/284/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/MaterialCategory.java
+END
+EmployeeAward.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeAward.java
+END
+Material.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/382/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Material.java
+END
+TechniqueEnergy.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/327/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueEnergy.java
+END
+EmployeePositionDirector.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hxmes_hibernate/!svn/ver/330/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeePositionDirector.java
+END
+StandardProduct.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/StandardProduct.java
+END
+WorkCenterCapacity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/267/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/WorkCenterCapacity.java
+END
+ReferenceMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hxmes_hibernate/!svn/ver/275/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ReferenceMessage.java
+END
+EquipmentCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/244/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentCategory.java
+END
+Equipment.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Equipment.java
+END
+EquipmentField.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentField.java
+END
+Employee.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/hxmes_hibernate/!svn/ver/415/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/Employee.java
+END
+ScollingJobPlan.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/262/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/ScollingJobPlan.java
+END
+EquipmentDefect.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/260/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentDefect.java
+END
+TechniqueDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/hxmes_hibernate/!svn/ver/422/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/TechniqueDocument.java
+END
+EquipmentBOMDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hxmes_hibernate/!svn/ver/269/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EquipmentBOMDetail.java
+END
+StoreWhiteList.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/hxmes_hibernate/!svn/ver/279/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/StoreWhiteList.java
+END
+EmployeeContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hxmes_hibernate/!svn/ver/399/hxmes/src/main/java/com/thinkgem/jeesite/modules/ip/entity/EmployeeContact.java
+END

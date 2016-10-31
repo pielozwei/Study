@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/resources/templates/single/normal
+END
+viewForm.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/resources/templates/single/normal/viewForm.ftl
+END
+service.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/resources/templates/single/normal/service.ftl
+END
+controller.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/resources/templates/single/normal/controller.ftl
+END
+viewList.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/hxmes_hibernate/!svn/ver/6/hxmes/src/main/resources/templates/single/normal/viewList.ftl
+END

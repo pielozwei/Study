@@ -1,0 +1,74 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+	<title>获奖情况记录管理</title>
+	<meta name="decorator" content="default"/>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#zg_id").focus();
+			$("#inputForm").validate();
+		});
+	</script>
+</head>
+<body>
+	<br/>	
+	<form:form id="inputForm" modelAttribute="employeeAward" action="${ctx}/ip/employeeAward/save" method="post" class="form-horizontal">
+		<form:hidden path="id"/>
+		<tags:message content="${message}"/>
+		
+		<!-- <div class="control-group">
+			<label class="control-label" for="zg_id">职工ID:</label>
+			<div class="controls">
+				<form:select path="zg_id" class="required">
+				<option value="1024">张志成</option>
+				<option value="1025">张三</option>
+				<option value="101">马岛战争</option>
+				</form:select>
+			</div>
+		</div> -->
+		<div class="control-group">
+			<label class="control-label" for="zg_id">职工id:</label>
+			<div class="controls">
+				<form:input path="zg_id" htmlEscape="false" maxlength="200" class="required"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="hjjb">获奖级别:</label>
+			<div class="controls">
+				<form:select path="hjjb">
+					<form:options items="${fns:getDictList('d_hjjb')}" itemValue="value" itemLabel="label" htmlEscape="false"/>
+				</form:select>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="hjmc">获奖名称:</label>
+			<div class="controls">
+				<form:input path="hjmc" htmlEscape="false" maxlength="200" class="required"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="hjrq">获奖时间：</label>
+			<div class="controls">
+				<form:input path="hjrq" name="hjrq" type="text" maxlength="20" class="Wdate"
+					onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});"/>
+			</div>
+		</div>
+	
+		
+		<div class="control-group">
+			<label class="control-label" for="bjjgmc">颁奖机构名称:</label>
+			<div class="controls">
+				<form:textarea path="bjjgmc" htmlEscape="false"  maxlength="200" class="input-xxlarge"/>
+			</div>
+		</div>
+		
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeeAward:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit" value="保 存"/>&nbsp;
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回" onclick="history.go(-1)"/>
+		</div>
+	</form:form>
+</body>
+</html>

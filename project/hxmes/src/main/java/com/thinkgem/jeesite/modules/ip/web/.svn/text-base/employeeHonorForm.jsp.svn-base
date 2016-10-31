@@ -1,0 +1,102 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>荣誉称号记录管理</title>
+<meta name="decorator" content="default" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#name").focus();
+		$("#inputForm").validate();
+	});
+</script>
+</head>
+<body>
+	<br />
+
+	<form:form id="inputForm" modelAttribute="employeeHonor"
+		action="${ctx}/ip/employeeHonor/save" method="post"
+		class="form-horizontal">
+		<form:hidden path="id" />
+		<tags:message content="${message}" />
+
+		<!--  <div class="control-group">
+			<label class="control-label" for="zg_id">职工个人信息_ID:</label>
+			<div class="controls">
+				<form:select path="zg_id" >
+					<option value =" ">  </option>
+					<option value ="1024">1024</option>
+					<option value ="101">101</option>
+					<option value ="1025">1025</option>
+				</form:select>&nbsp;
+			</div>
+		</div>-->
+		<div class="control-group">
+			<label class="control-label" for="zg_id">职工姓名:</label>
+			<div class="controls">
+				<tags:treeselect id="zg_id" name="zg_id"
+					value="${list.id}" labelName="name"
+					labelValue="${list.name}" title="员工"
+					url="/ip/employee/treeData" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="jb">荣誉称号级别:</label>
+			<div class="controls">
+				<form:select path="jb">
+					<form:options items="${fns:getDictList('d_hjjb')}" itemLabel="label" itemValue="value" htmlEscape="false" />
+				</form:select>
+				&nbsp;
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="ckmc">荣誉称号名称:</label>
+			<div class="controls">
+				<form:input path="ckmc" htmlEscape="false" maxlength="200"
+					class="required" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="pzrq">荣誉称号批准日期:</label>
+			<div class="controls">
+				<form:input path="pzrq" name="pzrq" type="text" maxlength="20" class="Wdate required" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false});"/>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="pzjgmc">荣誉称号批准机构名称:</label>
+			<div class="controls">
+				<form:input path="pzjgmc" htmlEscape="false" maxlength="200"
+					class="required" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="ycxjlje">一次性奖励金额:</label>
+			<div class="controls">
+				<form:input path="ycxjlje" htmlEscape="false" maxlength="200" />
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="yjlje">月奖励金额:</label>
+			<div class="controls">
+				<form:input path="yjlje" htmlEscape="false" maxlength="200" />
+			</div>
+		</div>
+
+		<div class="form-actions">
+			<shiro:hasPermission name="ip:employeeHonor:edit">
+				<input id="btnSubmit" class="btn btn-primary" type="submit"
+					value="保 存" />&nbsp;
+				<!-- input id="btnSubmit" class="btn btn-primary" type="submit" value="保存并新增荣誉称号记录"/>&nbsp;-->
+			</shiro:hasPermission>
+			<input id="btnCancel" class="btn" type="button" value="返 回"
+				onclick="history.go(-1)" />
+		</div>
+	</form:form>
+</body>
+</html>

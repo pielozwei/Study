@@ -1,0 +1,173 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<html>
+<head>
+<title>质量要求管理</title>
+<meta name="decorator" content="default" />
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	});
+	function page(n, s) {
+		$("#pageNo").val(n);
+		$("#pageSize").val(s);
+		$("#searchForm").submit();
+		return false;
+	}
+	 function edit_click() {
+		var result = 0;
+		var num=0;
+		var check_array = document.getElementsByName("Select");
+		for (var i = 0; i < check_array.length; i++) {
+			if (check_array[i].checked == true) {
+				result = check_array[i].id;
+				num++;
+			}
+		}
+		if(num==0){
+			alert("请选中一条需要修改的信息");
+			return;
+		}
+		if(num>1){
+			alert("一次只能修改一条信息");
+			return;
+		}
+		window.location.href = "${ctx}/ip/techniqueCheckItem/form?id=" + result;
+		//window.location.href="/hxmes/ip/organization/form?id="+rusult；
+		//alert("edit"+rusult);
+	} 
+
+	function del_click() {
+		var result = 0;
+		var num = 0;
+		var check_array = document.getElementsByName("Select");
+
+		for (var i = 0; i < check_array.length; i++) {
+			if (check_array[i].checked == true) {
+				result = check_array[i].id;
+				num++;
+			}
+		}
+		if (num == 0) {
+			alert("请选中一条需要删除的信息");
+			reutrn;
+		} else if (num > 1) {
+			var idAll = new Array();
+			var count = 0;
+			var herfs = new Array();
+			for (var i = 0; i < check_array.length; i++) {
+				if (check_array[i].checked == true) {
+					idAll[count] = check_array[i].id;
+					count++;
+				}
+			}
+			for (var j = 0; j < count; j++) {
+				herfs[j] = idAll[j];
+			}
+			var herfss = "${ctx}/ip/techniqueCheckItem/deletes?id="
+					+ herfs.toString();
+			confirmx('确认要删除这些质量检测项吗？', herfss);
+		} else {
+			var herf = "${ctx}/ip/techniqueCheckItem/delete?id=" + result;
+			confirmx('确认要删除该行质量检测项吗？', herf);
+		}
+	}
+	function CheckSelect() { // 遍历 form  
+		var all = document.getElementById("SelectAll");
+		var checkbox = document.getElementsByName("Select"); // 检查是否是指定的控件 
+		for (var i = 0; i < checkbox.length; i++) { // 提取控件
+			if (all.checked == true) {// 正选
+				checkbox[i].checked = true;
+			} else { // 反选 
+				checkbox[i].checked = false;
+			}
+		}
+	}
+	window.onload = function() {
+		var xl = document.getElementsByClassName("xl");
+		for (i = 0; i < xl.length; i++) {
+			xl[i].innerHTML = i + 1;
+		}
+	}
+</script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="${ctx}/ip/techniqueCheckItem/">质量要求列表</a></li>
+
+
+		<li class="pull-right">
+		<shiro:hasPermission name="ip:techniqueCheckItem:edit">
+			<input id="btnAdd" class="btn btn-primary" type="button" value="新增"
+				onclick="window.location.href='${ctx}/ip/techniqueCheckItem/form'" />
+		</shiro:hasPermission>
+	</ul>
+	<form:form id="searchForm" modelAttribute="techniqueCheckItem"
+		action="${ctx}/ip/techniqueCheckItem/" method="post"
+		class="breadcrumb form-search">
+
+		&nbsp;
+		<input id="pageNo" name="pageNo" type="hidden" value="${page.pageNo}" />
+		<input id="pageSize" name="pageSize" type="hidden"
+			value="${page.pageSize}" />
+		<label>工序 ：</label>
+		<tags:treeselect id="gylx_id" name="gylx_id" value="${list.id}"
+			labelName="name" labelValue="${list.name}" title="工序名称"
+			url="/ip/technique/treeData" />
+		<label>是否启用 ：</label>
+		<form:select class="input-small" path="sfqy">
+			<form:options items="${fns:getDictList('shi_yong')}"
+				itemValue="value" itemLabel="label" htmlEscape="false" />
+		</form:select>
+		&nbsp;<input id="btnSubmit" class="btn btn-primary" type="submit"
+			value="查询" />
+	</form:form>
+	<tags:message content="${message}" />
+	<table id="contentTable"
+		class="table table-striped table-bordered table-condensed">
+		<thead>
+			<tr>
+				<th><input name="SelectAll" type="checkbox" id="SelectAll"
+					onclick="CheckSelect()" />全选</th>
+				<th>序号</th>
+				<th>工序</th>
+				<th>质量检验项编码</th>
+				<th>名称</th>
+				<th>类别</th>
+				<th>单位</th>
+				<th>上限</th>
+				<th>下限</th>
+				<th>标准值</th>
+				<th>是否启用</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${page.list}" var="techniqueCheckItem">
+				<tr>
+					<td align="center"><input name="Select" type="checkbox"
+						class="Select" id="${techniqueCheckItem.id}" /></td>
+					<td class="xl"></td>
+					<td>${techniqueCheckItem.gylx_id}</td>
+					<td>${techniqueCheckItem.jyxmbh}</td>
+					<td><a
+						href="${ctx}/ip/techniqueCheckItem/form?id=${techniqueCheckItem.id}">${techniqueCheckItem.jyxmmc}</a></td>
+					<td></td>
+					<td>${techniqueCheckItem.jyxmdw}</td>
+					<td>${techniqueCheckItem.jyxmsxz}</td>
+					<td>${techniqueCheckItem.jyxmxxz}</td>
+					<td>${techniqueCheckItem.jyxmbzz}</td>
+					<td>${techniqueCheckItem.sfqy}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+	<input id="btnEdit" class="btn btn-primary" type="button" value="编辑"
+		onclick="edit_click()" />&nbsp;
+	<input id="btnDelete" class="btn btn-primary" type="button" value="删除"
+		onclick="del_click()" /> &nbsp;
+	<input id="btnExport" class="btn btn-primary" type="button" value="导出"
+		onclick="" />
+	<div class="pagination">${page}</div>
+</body>
+</html>
