@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pielozwei/Study
+#          search-paths: repo
+          username: pielozwei
+          password: Lizhen_ghost1
+
+server:
+  port: 1201
